@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <head>
     <body>
+        <script>
+            nameFunction = () => {
+                document.getElementById('jame').innerHTML = 'Sudarat Suntipitak'
+                document.getElementById('jame').style.fontSize = "35px"
+            }
+            pigtureFunction1 = () => {
+                document.getElementById('myImage').src = 'Photo/pig_3.jpg'
+                document.getElementById('myImage').style = "width: 550px"
+                // document.getElementById('myImage').style = "height: 550px"
+            }
+            pigtureFunction2 = () => {
+                document.getElementById('myImage').src = 'photo/pig_1.jpg'
+                document.getElementById('myImage').style = "width: 800px"
+            }
+        </script>
         <center>
-        <p id="jame">Differentlife</p>
-        <!-- <button type="button" onclick ='document.getElementById("jame").innerHTML = "Sudarat"'>Click it</button> -->
-        <button type="button" onclick="document.getElementById('jame').innerHTML = 'Sudarat Santipitak'">Your Name</button>
+        <p id="jame" style="font-size: 28px;">Differentlife</p>
+        <button type="button" onclick="nameFunction()">Your Name</button>
+        <button onclick="pigtureFunction1()">I like</button>
+        <button onclick="pigtureFunction2()">I'm Very like</button> 
         <br> <br>
-        <button onclick="document.getElementById('myImage').src = 'Photo/pig_2.jpg'">I like</button>
-        <!-- <img id = "myImage" src="Photo/pig_1.jpg" style="width: 800px;"> -->
-        <button onclick="document.getElementById('myImage').src = 'Photo/pig_1.jpg'">I'm Very like</button> 
-        <br> <br>
-        <img id="myImage" style="width: 800px;">
-        <!-- <img id = "myImage" src="Photo/pig_2.jpg" style="width: 400px;"> -->
+        <img id="myImage" style="height: ;">
+        <br>
         </center>
     </body>
 </head>
